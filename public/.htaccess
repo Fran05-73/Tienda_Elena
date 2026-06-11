@@ -1,0 +1,18 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Servir archivos y carpetas reales directamente (CSS, JS, imágenes)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Todo lo demás va al index.php
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+# Seguridad: no exponer extensiones sensibles
+<FilesMatch "\.(env|sql|log|sh|bak)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

@@ -1,0 +1,15 @@
+# --- Configuración de Machine Learning & Python ---
+ml/venv/
+ml/scripts/__pycache__/
+*.pyc
+ml/scripts/tienda_elena_ia.log
+
+# --- Credenciales y Datos Sensibles ---
+# Descomenta las líneas de abajo si tus archivos config guardan contraseñas reales
+config/config.php
+config/database.php
+
+# --- Archivos de Sistema ---
+.DS_Store
+Thumbs.db
+.vscode/
