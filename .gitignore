@@ -5,7 +5,7 @@ ml/scripts/__pycache__/
 ml/scripts/tienda_elena_ia.log
 
 # --- Carpeta de Vendor ---
-vendor/
+/vendor/
 
 # --- Credenciales y Datos Sensibles ---
 config/config.php
